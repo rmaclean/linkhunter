@@ -52,6 +52,7 @@
                 progressBar.Next(url);
             }
 
+            Console.Clear();
             foreach (var link in links.Where(_ => !_.Found || includeFound))
             {
                 Console.WriteLine(link.URL);
